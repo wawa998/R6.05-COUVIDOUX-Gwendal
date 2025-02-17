@@ -21,8 +21,10 @@
     "@hapipal/schmervice": "^3.0.0",
     "@hapipal/schwifty": "^6.x.x",
     "@wawa998/iut-encrypt": "^1.0.0",
+    "amqplib": "^0.10.5",
     "exiting": "6.0.1",
     "joi": "17.x.x",
+    "json2csv": "^6.0.0-alpha.2",
     "nodemailer": "^6.10.0",
     "objection": "2.x.x",
     "sqlite3": "5.0.2"

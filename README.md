@@ -16,3 +16,5 @@ Les éléments suivants doivent s'y trouver afin de permettre le fonctionnement 
 - NODEMAILER_USER : user pour nodemailer (dans le sens de l'adresse mail)
 - NODEMAILER_PASS : mot de passe de l'utilisateur pour nodemailer
 - NODEMAILER_USERNAME : pseudo de l'utilisateur dans nodemailer (pseudo visible lors de l'envoie)
+- RABBITMQ_URL: url de la rabbit queue
+- QUEUE_NAME : nom de la queue queue
