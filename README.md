@@ -1,5 +1,7 @@
 # iut-project
 
+Serveur back-end utilisé pour gérer une filmothèque avec des utilisateurs.
+
 ## Mise en place du projet
 
 Penser à installer les dépendance si ce n'est pas déja fait
@@ -58,4 +60,12 @@ npm run worker
 npm run both
 ``` 
 
+## documentation
+
+Une page de documentatoion pour les routes est disponible à l'adresse : 
+http://localhost:3000/documentation/
+
+## attention!
+
+Le premier utilisateur crée sera un admin par défaut.
 
