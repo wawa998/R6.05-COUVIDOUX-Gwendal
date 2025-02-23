@@ -35,11 +35,11 @@ const startWorker = async () => {
     channel.consume(QUEUE_NAME, async (msg) => {
         try {
             await processMessage(msg);
-            channel.ack(msg); // Marque le message comme traité
+            channel.ack(msg);
         }
         catch (err) {
-            console.error('Erreur lors du traitement:', err);
-            channel.nack(msg, false, true); // Réessayer le message en cas d'erreur
+            console.error('Error while processing:', err);
+            channel.nack(msg, false, true);
         }
     });
 };
