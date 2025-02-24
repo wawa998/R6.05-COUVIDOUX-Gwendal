@@ -11,8 +11,8 @@
   },
   "scripts": {
     "start": "node server",
-    "worker":"node worker",
-    "both":"concurrently \"node server\" \"node worker\"",
+    "worker": "node worker",
+    "both": "concurrently \"node server\" \"node worker\"",
     "test": "lab -a @hapi/code -I \"__core-js_shared__,CSS,regeneratorRuntime,core\" -L",
     "lint": "eslint ."
   },
@@ -49,10 +49,11 @@
     "@hapipal/hpal-debug": "2.x.x",
     "@hapipal/toys": "3.x.x",
     "babel-eslint": "10.x.x",
+    "concurrently": "^9.0.1",
     "dotenv": "8.x.x",
     "eslint": "7.x.x",
     "hapi-swagger": "14.x.x",
     "knex": "^0.21.16",
-    "concurrently": "^9.0.1"
+    "sinon": "^19.0.2"
   }
 }
