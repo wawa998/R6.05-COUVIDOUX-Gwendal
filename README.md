@@ -4,22 +4,22 @@ Serveur back-end utilisé pour gérer une filmothèque avec des utilisateurs.
 
 ## Mise en place du projet
 
-Penser à installer les dépendance si ce n'est pas déja fait
+Penser à installer les dépendances si ce n'est pas déjà fait.
 ```bash
 npm i
 ```
-Si aucun système RabbitMQ n'est en place, voici une commande pour en mettre en place/ lancer un via docker
+Si aucun système RabbitMQ n'est en place, voici une commande pour en mettre en place/ lancer un via docker:
 ```bash
 docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:management
 ```
-Adresse pour le dashboard 
+Adresse pour le dashboard :
 http://localhost:15672/ 
 
 Identifiant : 
 - user: guest
 - pass: guest
 
-Si aucune base de données (MySQL) mises en, utiliser la commandes suivantes
+Si aucune base de données (MySQL) mises en place, utiliser la commande :
 ```bash
 docker run -d --name hapi-mysql -e MYSQL_ROOT_PASSWORD=hapi -e MYSQL_DATABASE=user -p3307:3306 mysql:8.0 --default-authentication-plugin=mysql_native_password
 ```
@@ -46,7 +46,7 @@ Les éléments suivants doivent s'y trouver afin de permettre le fonctionnement 
 ## Lancement projet
 
 Il faut ensuite démarrer le serveur ainsi que le worker.
-- Soit séparément en éxécutant 
+- Sois séparément en éxécutant 
 ```bash
 npm run start
 ```
@@ -55,7 +55,7 @@ npm run start
 npm run worker
 ```
 
-- Soit en simultané en éxécutant
+- Sois en simultané en éxécutant
 ```bash
 npm run both
 ``` 
